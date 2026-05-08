@@ -5,32 +5,51 @@ async function loadData() {
   const response = await fetch(sheetURL);
   const csvText = await response.text();
 
-  const rows = csvText.split("\n").map((row) => row.split(","));
+  const rows = csvText
+    .trim()
+    .split("\n")
+    .map(row => row.split(","));
 
   const headers = rows[0];
   const data = rows.slice(1);
 
-  const table = document.getElementById("games-table");
+  const app = document.getElementById("app");
 
-  let html = "<tr>";
+  let html = `
+    <h1>Poker Nights Dashboard</h1>
+    <p>Live data from Google Sheets</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+  `;
 
-  headers.forEach((header) => {
+  headers.forEach(header => {
     html += `<th>${header}</th>`;
   });
 
-  html += "</tr>";
+  html += `
+          </tr>
+        </thead>
+        <tbody>
+  `;
 
-  data.forEach((row) => {
+  data.forEach(row => {
     html += "<tr>";
-
-    row.forEach((cell) => {
+    row.forEach(cell => {
       html += `<td>${cell}</td>`;
     });
-
     html += "</tr>";
   });
 
-  table.innerHTML = html;
+  html += `
+        </tbody>
+      </table>
+    </div>
+  `;
+
+  app.innerHTML = html;
 }
 
 loadData();
+
