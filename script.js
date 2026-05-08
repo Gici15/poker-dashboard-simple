@@ -1,46 +1,45 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 const sheetURL =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vTlWtHz4SOh9DhSrhlJkPhT1ws47HJJHU6pnLnTFfJOB01B7PAqStxhmCG-35sgEA/pub?gid=2093949561&single=true&output=csv";
+=======
+const app = document.getElementById("app");
+>>>>>>> e670277a5191e089775af14931323ef47bdaf07d
 
-async function loadData() {
-  const response = await fetch(sheetURL);
-  const csvText = await response.text();
-
-  const rows = csvText
-    .trim()
-    .split("\n")
-    .map(row => row.split(","));
-
-  const headers = rows[0];
-  const data = rows.slice(1);
-
-  const app = document.getElementById("app");
+function renderDashboard() {
+  if (!window.games || !Array.isArray(window.games)) {
+    app.innerHTML = "<h2>No data found in data.js</h2>";
+    return;
+  }
 
   let html = `
     <h1>Poker Nights Dashboard</h1>
-    <p>Live data from Google Sheets</p>
     <div class="table-wrapper">
       <table>
         <thead>
           <tr>
-  `;
-
-  headers.forEach(header => {
-    html += `<th>${header}</th>`;
-  });
-
-  html += `
+            <th>Date</th>
+            <th>Player</th>
+            <th>Buy-In</th>
+            <th>Rebuy</th>
+            <th>Cash-Out</th>
+            <th>Profit</th>
           </tr>
         </thead>
         <tbody>
   `;
 
-  data.forEach(row => {
-    html += "<tr>";
-    row.forEach(cell => {
-      html += `<td>${cell}</td>`;
-    });
-    html += "</tr>";
+  window.games.forEach((game) => {
+    html += `
+      <tr>
+        <td>${game.date || ""}</td>
+        <td>${game.player || ""}</td>
+        <td>${game.buyIn || ""}</td>
+        <td>${game.rebuy || ""}</td>
+        <td>${game.cashOut || ""}</td>
+        <td>${game.profit || ""}</td>
+      </tr>
+    `;
   });
 
   html += `
@@ -52,6 +51,7 @@ async function loadData() {
   app.innerHTML = html;
 }
 
+<<<<<<< HEAD
 loadData();
 
 =======
@@ -207,3 +207,6 @@ function bindEvents() {
 }
 render();
 >>>>>>> parent of 47b20fa (Update script.js)
+=======
+renderDashboard();
+>>>>>>> e670277a5191e089775af14931323ef47bdaf07d
