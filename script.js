@@ -267,4 +267,61 @@ function bindEvents() {
   document.getElementById('h2hB').addEventListener('change', updateH2H);
 }
 
-render();
+const SITE_PASSWORD = "Fito_shume";
+
+function showLogin() {
+  app.innerHTML = `
+    <div class="login-box">
+      <h1>Poker Nights Dashboard</h1>
+      <p>Enter password</p>
+
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="Password"
+        style="
+          padding:10px;
+          border-radius:8px;
+          border:none;
+          margin-top:10px;
+        "
+      />
+
+      <br><br>
+
+      <button
+        id="loginBtn"
+        style="
+          padding:10px 20px;
+          border:none;
+          border-radius:8px;
+          cursor:pointer;
+          background:#16a34a;
+          color:white;
+          font-weight:bold;
+        "
+      >
+        Login
+      </button>
+
+      <p id="errorMsg" style="color:red;margin-top:10px;"></p>
+    </div>
+  `;
+
+  document.getElementById("loginBtn").addEventListener("click", () => {
+    const password = document.getElementById("passwordInput").value;
+
+    if (password === SITE_PASSWORD) {
+      localStorage.setItem("poker-auth", "true");
+      render();
+    } else {
+      document.getElementById("errorMsg").innerText = "Wrong password";
+    }
+  });
+}
+
+if (localStorage.getItem("poker-auth") === "true") {
+  render();
+} else {
+  showLogin();
+}
