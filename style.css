@@ -121,6 +121,8 @@ tr:hover { background: rgba(30, 64, 175, 0.4); }
 .rank-1 { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; }
 .rank-2 { background: linear-gradient(135deg, #facc15, #eab308); color: #020617; }
 .rank-3 { background: linear-gradient(135deg, #f97316, #ea580c); color: #fff; }
+.rank-7 { background: linear-gradient(135deg, #06b6d4, #0891b2); color: #fff; }
+.rank-8 { background: linear-gradient(135deg, #06b6d4, #0891b2); color: #fff; }
 .rank-9, .rank-10 { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #fff; }
 .mini { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; font-size: 0.75rem; color: var(--muted); }
 .mini span { border: 1px solid rgba(55,65,81,.9); background: rgba(15,23,42,.9); border-radius: 999px; padding: 5px 9px; }
