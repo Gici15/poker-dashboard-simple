@@ -777,9 +777,9 @@ window.games = [
       "Antonio": 4,
       "Arber": 0,
       "Arditi": 0,
-      "Denis": 0,
+      "Denis": "x",
       "Duli": 0,
-      "Ervir": 0,
+      "Ervir": "x",
       "Gesti": "x",
       "Landi": 1,
       "Visi": 0
