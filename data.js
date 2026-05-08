@@ -1205,7 +1205,7 @@ window.games = [
       "Visi": 0
     },
     "handBonuses": {
-      "RF": "Ervir",
+      "RF": null,
       "SF": null
     }
   }
