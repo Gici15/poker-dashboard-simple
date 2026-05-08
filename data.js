@@ -1205,7 +1205,7 @@ window.games = [
       "Visi": 0
     },
     "handBonuses": {
-      "RF": "Denis","Denis","Denis"
+      "RF": "Denis"
       "SF": null
     }
   }
