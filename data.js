@@ -1271,7 +1271,28 @@ window.games = [
       "RF": "Visi",
       "SF": null
     }
-  } 
+  } ,
+  {
+    "id": 61,
+    "dayId": 12,
+    "label": "09-05_4",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 4,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 2,
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": 1,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  }
 ];
 
 window.TOTAL_TOURNAMENT_NIGHTS = 15;
