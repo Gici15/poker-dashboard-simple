@@ -190,7 +190,7 @@ function nightRows(night) {
       }
     });
     return {name, pts, played};
-  }).filter(r => r.played).sort((a,b) => b.pts - a.pts || a.name.localeCompare(b.name));
+  }).filter(r => r.played).sort((a,b) => b.pts - a.pts || b.name.localeCompare(a.name));
 }
 
 function drawNight(night) {
@@ -220,7 +220,7 @@ function podiumRows(place) {
   return players.map(name => ({
     name,
     count: games.filter(g => g.pointsByPlayer[name] === Number(place)).length
-  })).sort((a,b)=>b.count-a.count || a.name.localeCompare(b.name));
+  })).sort((a,b)=>b.count-a.count || b.name.localeCompare(a.name));
 }
 
 function drawPodium(place) {
