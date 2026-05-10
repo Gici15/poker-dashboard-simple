@@ -173,7 +173,9 @@ function drawCumulative() {
     options:{
       responsive:true,
       maintainAspectRatio:false,
-      plugins:{legend:{position:'bottom'}, tooltip:{mode:'index', intersect:false}},
+      plugins:{legend:{position:'bottom'}, tooltip:{mode:'index', intersect:false,
+    itemSort: function(a, b) {
+      return b.parsed.y - a.parsed.y;}}},
       scales:{y:{beginAtZero:true, ticks:{precision:0}}, x:{grid:{display:false}}}
     }
   });
