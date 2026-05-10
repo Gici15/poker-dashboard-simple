@@ -124,7 +124,7 @@ function renderBonuses() {
 }
 
 function renderRules() {
-  return card('Tournament Rules', '', `<ol class="rules"><li>Ties are broken by most 1st places, then most 2nd places, then highest PPG.</li><li>A valid game that is eligible to count toward points needs a minimum of 6 players.</li><li>RF scores 10 points; SF scores 5 points.</li><li>Each game gives 4 points to 1st, 2 points to 2nd, and 1 point to 3rd.</li></ol>`);
+  return card('Tournament Rules', '', `<ol class="rules"><li>Ties are broken by most 1st places, then most 2nd places, then highest PPG.</li><li>A valid game that is eligible to count toward points needs a minimum of 6 players.</li><li>RF scores 10 points; SF scores 5 points.</li><li>Each game gives 4 points to 1st, 2 points to 2nd, and 1 point to 3rd.</li><li>Each player may take up to 2 re-buys.</li></ol>`);
 }
 
 function render() {
