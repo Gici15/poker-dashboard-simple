@@ -128,7 +128,7 @@ function renderRules() {
 }
 
 function render() {
-  app.innerHTML = renderHeader() + renderStandings() + `<section class="grid">${renderChartCard('cumulativeChart','Cumulative Points by Night',`Running totals after each night (${players.length} players).`)}${renderChartCard('nightChart','Night Standings','Total points for selected night.', renderNightControls())}${renderChartCard('podiumChart','Podium Finishes','Pick a position below, counting that position over all games.', renderPodiumControls())}${renderH2H()}${renderBonuses()}</section>` + renderRules() + `<div class="footer">Static GitHub Pages version · No npm/build required</div>`;
+  app.innerHTML = renderHeader() + renderStandings() + `<section class="grid">${renderChartCard('cumulativeChart','Cumulative Points by Night',`Running totals after each night (${players.length} players).`)}${renderChartCard('nightChart','Night Standings','Total points for selected night.', renderNightControls())}${renderChartCard('podiumChart','Podium Finishes','Pick a position below, counting that position over all games.', renderPodiumControls())}${renderH2H()}${renderBonuses()}</section>` + renderRules() + `<div class="footer"></div>`;
   drawCharts();
   bindEvents();
   updateH2H();
