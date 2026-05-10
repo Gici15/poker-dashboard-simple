@@ -1300,7 +1300,7 @@ window.games = [
     "pointsByPlayer": {
       "Amiklati": 0,
       "Antonio": 0,
-      "Arber": 0,
+      "Arber": "x",
       "Arditi": 2,
       "Denis": 0,
       "Duli": 0,
