@@ -77,7 +77,7 @@ function card(title, meta, inner) {
 function renderHeader() {
   const nightsPlayed = new Set(games.map(g => g.dayId)).size;
   const gamesToGo = Math.max(TOTAL_TOURNAMENT_NIGHTS - nightsPlayed, 0);
-  return `<header class="header"><div><h1>Poker Nights Dashboard</h1><p>Season 2 data imported from your Excel file.</p></div><div class="badges"><span>${gamesToGo} nights to go</span><span>${nightsPlayed}/${TOTAL_TOURNAMENT_NIGHTS} nights played</span></div></header>`;
+  return `<header class="header"><div><h1>Poker Nights Dashboard</h1><p>Season 2</p></div><div class="badges"><span>${gamesToGo} nights to go</span><span>${nightsPlayed}/${TOTAL_TOURNAMENT_NIGHTS} nights played</span></div></header>`;
 }
 
 function renderStandings() {
@@ -87,7 +87,7 @@ function renderStandings() {
 
   const body = rows.map((r,i)=>`<tr><td><span class="rank rank-${i+1}">${i+1}</span></td><td>${r.name}</td><td><b>${r.totalPoints}</b></td><td>${r.gamesPlayed}</td><td>${r.wins}</td><td>${r.seconds}</td><td>${r.thirds}</td><td>${r.avgPoints.toFixed(2)}</td><td>${r.rfCount}</td><td>${r.sfCount}</td></tr>`).join('');
 
-  return card('Overall Standings','Click-free static ranking from your Excel file.', `<div class="table-wrap"><table><thead><tr><th>#</th><th>Player</th><th>Total</th><th>Gms</th><th>1st</th><th>2nd</th><th>3rd</th><th>PPG</th><th>RF</th><th>SF</th></tr></thead><tbody>${body}</tbody></table></div><div class="mini"><span>Top performer: <b>${top.name}</b> (${top.totalPoints} pts)</span><span>PPG: <b>${ppg.name}</b> (${ppg.avgPoints.toFixed(2)})</span><span>Total games: <b>${games.length}</b></span></div>`);
+  return card('Overall Standings','Click-free static ranking', `<div class="table-wrap"><table><thead><tr><th>#</th><th>Player</th><th>Total</th><th>Gms</th><th>1st</th><th>2nd</th><th>3rd</th><th>PPG</th><th>RF</th><th>SF</th></tr></thead><tbody>${body}</tbody></table></div><div class="mini"><span>Top performer: <b>${top.name}</b> (${top.totalPoints} pts)</span><span>PPG: <b>${ppg.name}</b> (${ppg.avgPoints.toFixed(2)})</span><span>Total games: <b>${games.length}</b></span></div>`);
 }
 
 function renderChartCard(id, title, meta, controls='') {
