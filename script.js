@@ -134,6 +134,7 @@ function render() {
   ${renderChartCard('nightChart','Night Standings','Total points for selected night.', renderNightControls())}
   ${renderChartCard('podiumChart','Podium Finishes','Pick a position below, counting that position over all games.', renderPodiumControls())}
   ${renderChartCard('currentNoPodiumStreakChart','Lojra Larg Podiumit','Games away from podium')}
+  ${renderChartCard('totalPodiumsChart','Total Podiums','Total 1st + 2nd + 3rd places for each player.')}
   ${renderH2H()}${renderBonuses()}</section>` + renderRules() + `<div class="footer"></div>`;
   drawCharts();
   bindEvents();
@@ -159,6 +160,7 @@ function drawCharts() {
   drawNight(maxNight());
   drawPodium(4);
   drawCurrentNoPodiumStreak();
+  drawTotalPodiums();
 }
 
 function drawCumulative() {
@@ -232,6 +234,15 @@ function podiumRows(place) {
   })).sort((a,b)=>b.count-a.count || b.name.localeCompare(a.name));
 }
 
+function totalPodiumRows() {
+  return stats()
+    .map(r => ({
+      name: r.name,
+      podiums: r.podiums
+    }))
+    .sort((a, b) => b.podiums - a.podiums || a.name.localeCompare(b.name));
+}
+
 function currentNoPodiumStreakRows() { 
   return players.map(name => { 
     let streak = 0; for (let i = games.length - 1; i >= 0; i--) 
@@ -259,6 +270,40 @@ function drawPodium(place) {
       maintainAspectRatio:false,
       plugins:{legend:{display:false}},
       scales:{x:{beginAtZero:true, ticks:{precision:0}}, y:{grid:{display:false}}}
+    }
+  });
+}
+
+function drawTotalPodiums() {
+  const rows = totalPodiumRows();
+
+  makeChart('totalPodiumsChart', {
+    type: 'bar',
+    data: {
+      labels: rows.map(r => r.name),
+      datasets: [{
+        label: 'Total podiums',
+        data: rows.map(r => r.podiums),
+        backgroundColor: rows.map(r => COLORS[players.indexOf(r.name) % COLORS.length]),
+        borderRadius: 10
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          ticks: { precision: 0 }
+        },
+        y: {
+          grid: { display: false }
+        }
+      }
     }
   });
 }
