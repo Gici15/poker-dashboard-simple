@@ -128,7 +128,12 @@ function renderRules() {
 }
 
 function render() {
-  app.innerHTML = renderHeader() + renderStandings() + `<section class="grid">${renderChartCard('cumulativeChart','Cumulative Points by Night',`Running totals after each night (${players.length} players).`)}${renderChartCard('nightChart','Night Standings','Total points for selected night.', renderNightControls())}${renderChartCard('podiumChart','Podium Finishes','Pick a position below, counting that position over all games.', renderPodiumControls())}${renderH2H()}${renderBonuses()}</section>` + renderRules() + `<div class="footer"></div>`;
+  app.innerHTML = renderHeader() + renderStandings() + `<section class="grid">
+  ${renderChartCard('cumulativeChart','Cumulative Points by Night',`Running totals after each night (${players.length} players).`)}
+  ${renderChartCard('nightChart','Night Standings','Total points for selected night.', renderNightControls())}
+  ${renderChartCard('podiumChart','Podium Finishes','Pick a position below, counting that position over all games.', renderPodiumControls())}
+  ${renderChartCard('currentNoPodiumStreakChart','Not in Top-3','Games away from podium')}
+  ${renderH2H()}${renderBonuses()}</section>` + renderRules() + `<div class="footer"></div>`;
   drawCharts();
   bindEvents();
   updateH2H();
@@ -152,6 +157,7 @@ function drawCharts() {
   drawCumulative();
   drawNight(maxNight());
   drawPodium(4);
+  drawCurrentNoPodiumStreak();
 }
 
 function drawCumulative() {
@@ -225,6 +231,14 @@ function podiumRows(place) {
   })).sort((a,b)=>b.count-a.count || b.name.localeCompare(a.name));
 }
 
+function currentNoPodiumStreakRows() { 
+  return players.map(name => { 
+    let streak = 0; for (let i = games.length - 1; i >= 0; i--) 
+    { const value = games[i].pointsByPlayer[name]; 
+        if (value === 4 || value === 2 || value === 1) { break; } streak++; } 
+    return { name, streak }; }).sort((a, b) => b.streak - a.streak || a.name.localeCompare(b.name)); 
+}
+
 function drawPodium(place) {
   const rows = podiumRows(place);
   makeChart('podiumChart', {
@@ -244,6 +258,40 @@ function drawPodium(place) {
       maintainAspectRatio:false,
       plugins:{legend:{display:false}},
       scales:{x:{beginAtZero:true, ticks:{precision:0}}, y:{grid:{display:false}}}
+    }
+  });
+}
+
+function drawCurrentNoPodiumStreak() {
+  const rows = currentNoPodiumStreakRows();
+
+  makeChart('currentNoPodiumStreakChart', {
+    type: 'bar',
+    data: {
+      labels: rows.map(r => r.name),
+      datasets: [{
+        label: 'Games without top 3',
+        data: rows.map(r => r.streak),
+        backgroundColor: rows.map(r => COLORS[players.indexOf(r.name) % COLORS.length]),
+        borderRadius: 10
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          ticks: { precision: 0 }
+        },
+        y: {
+          grid: { display: false }
+        }
+      }
     }
   });
 }
