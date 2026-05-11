@@ -270,7 +270,7 @@ function drawCurrentNoPodiumStreak() {
     data: {
       labels: rows.map(r => r.name),
       datasets: [{
-        label: 'Games without top 3',
+        label: 'Pa e lagur',
         data: rows.map(r => r.streak),
         backgroundColor: rows.map(r => COLORS[players.indexOf(r.name) % COLORS.length]),
         borderRadius: 10
