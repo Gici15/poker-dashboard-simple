@@ -16,7 +16,7 @@ function bonusFor(game, name) {
 
 function stats() {
   return players.map(name => {
-    let totalPoints = 0, gamesPlayed = 0, wins = 0, seconds = 0, thirds = 0, rfCount = 0, sfCount = 0;
+    let totalPoints = 0, gamesPlayed = 0, wins = 0, seconds = 0, thirds = 0, podiums = 0, rfCount = 0, sfCount = 0;
     for (const game of games) {
       const value = game.pointsByPlayer[name];
       if (value === 'x') continue;
@@ -26,11 +26,12 @@ function stats() {
       if (numeric === 4) wins += 1;
       if (numeric === 2) seconds += 1;
       if (numeric === 1) thirds += 1;
+      if (numeric === 4 || numeric === 2 || numeric === 1) podiums += 1;
       if (game.handBonuses?.RF === name) rfCount += 1;
       if (game.handBonuses?.SF === name) sfCount += 1;
     }
     const avgPoints = gamesPlayed ? totalPoints / gamesPlayed : 0;
-    return { name, totalPoints, gamesPlayed, wins, seconds, thirds, rfCount, sfCount, avgPoints };
+    return { name, totalPoints, gamesPlayed, wins, seconds, thirds, podiums, rfCount, sfCount, avgPoints };
   });
 }
 
@@ -85,9 +86,9 @@ function renderStandings() {
   const top = rows[0];
   const ppg = [...rows].sort((a,b) => b.avgPoints - a.avgPoints || b.gamesPlayed - a.gamesPlayed)[0];
 
-  const body = rows.map((r,i)=>`<tr><td><span class="rank rank-${i+1}">${i+1}</span></td><td>${r.name}</td><td><b>${r.totalPoints}</b></td><td>${r.gamesPlayed}</td><td>${r.wins}</td><td>${r.seconds}</td><td>${r.thirds}</td><td>${r.avgPoints.toFixed(2)}</td><td>${r.rfCount}</td><td>${r.sfCount}</td></tr>`).join('');
+  const body = rows.map((r,i)=>`<tr><td><span class="rank rank-${i+1}">${i+1}</span></td><td>${r.name}</td><td><b>${r.totalPoints}</b></td><td>${r.gamesPlayed}</td><td>${r.wins}</td><td>${r.seconds}</td><td>${r.thirds}</td><td>${r.podiums}</td><td>${r.avgPoints.toFixed(2)}</td><td>${r.rfCount}</td><td>${r.sfCount}</td></tr>`).join('');
 
-  return card('Overall Standings','Click-free static ranking', `<div class="table-wrap"><table><thead><tr><th>#</th><th>Player</th><th>Total</th><th>Gms</th><th>1st</th><th>2nd</th><th>3rd</th><th>PPG</th><th>RF</th><th>SF</th></tr></thead><tbody>${body}</tbody></table></div><div class="mini"><span>Top performer: <b>${top.name}</b> (${top.totalPoints} pts)</span><span>PPG: <b>${ppg.name}</b> (${ppg.avgPoints.toFixed(2)})</span><span>Total games: <b>${games.length}</b></span></div>`);
+  return card('Overall Standings','Click-free static ranking', `<div class="table-wrap"><table><thead><tr><th>#</th><th>Player</th><th>Total</th><th>Gms</th><th>1st</th><th>2nd</th><th>3rd</th><th>Pod</th><th>PPG</th><th>RF</th><th>SF</th></tr></thead><tbody>${body}</tbody></table></div><div class="mini"><span>Top performer: <b>${top.name}</b> (${top.totalPoints} pts)</span><span>PPG: <b>${ppg.name}</b> (${ppg.avgPoints.toFixed(2)})</span><span>Total games: <b>${games.length}</b></span></div>`);
 }
 
 function renderChartCard(id, title, meta, controls='') {
