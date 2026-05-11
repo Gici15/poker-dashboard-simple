@@ -132,7 +132,7 @@ function render() {
   ${renderChartCard('cumulativeChart','Cumulative Points by Night',`Running totals after each night (${players.length} players).`)}
   ${renderChartCard('nightChart','Night Standings','Total points for selected night.', renderNightControls())}
   ${renderChartCard('podiumChart','Podium Finishes','Pick a position below, counting that position over all games.', renderPodiumControls())}
-  ${renderChartCard('currentNoPodiumStreakChart','Not in Top-3','Games away from podium')}
+  ${renderChartCard('currentNoPodiumStreakChart','Lojra Larg Podiumit','Games away from podium')}
   ${renderH2H()}${renderBonuses()}</section>` + renderRules() + `<div class="footer"></div>`;
   drawCharts();
   bindEvents();
