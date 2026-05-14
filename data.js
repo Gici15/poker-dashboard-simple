@@ -1376,6 +1376,27 @@ window.games = [
       "RF": null,
       "SF": null
     }
+  },
+{
+    "id": 66,
+    "dayId": 13,
+    "label": "14-05_4",
+    "pointsByPlayer": {
+      "Amiklati": "x",
+      "Antonio": 1,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 4,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 2
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
   }
 ];
 
