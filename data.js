@@ -1418,6 +1418,48 @@ window.games = [
       "RF": null,
       "SF": null
     }
+  },
+  {
+    "id": 68,
+    "dayId": 14,
+    "label": "22-05_2",
+    "pointsByPlayer": {
+      "Amiklati": "x",
+      "Antonio": 4,
+      "Arber": 0,
+      "Arditi": 1,
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": "x",
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 2
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+  {
+    "id": 69,
+    "dayId": 14,
+    "label": "22-05_3",
+    "pointsByPlayer": {
+      "Amiklati": "x",
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 2,
+      "Ervir": "x",
+      "Gesti": 4,
+      "Landi": "x",
+      "Visi": 1
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
   }
 ];
 
