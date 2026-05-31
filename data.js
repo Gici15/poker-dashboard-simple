@@ -1,7 +1,7 @@
 window.seasons = {
   season2: {
     label: "Season 2",
-	players: ["Amiklati","Antonio","Arber","Arditi","Denis","Duli","Ervir","Gesti","Landi","Visi"];
+	players: ["Amiklati","Antonio","Arber","Arditi","Denis","Duli","Ervir","Gesti","Landi","Visi"],
 	games: [
   {
     "id": 1,
