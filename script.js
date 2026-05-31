@@ -3,11 +3,12 @@ const COLORS = ['#f87171', '#facc15', '#4ade80', '#60a5fa', '#c084fc', '#f472b6'
 let currentSeasonKey = localStorage.getItem('poker-season') || 'season2';
 
 function getSeason() {
-  return window.seasons?.[currentSeasonKey] || window.seasons?.season2 || {
+  const seasons = window.seasons || {};
+  return seasons[currentSeasonKey] || seasons.season2 || {
     label: 'Season',
     players: [],
     games: [],
-    TOTAL_TOURNAMENT_NIGHTS: 15,
+    TOTAL_TOURNAMENT_NIGHTS: 20,
     RF_BONUS_POINTS: 10,
     SF_BONUS_POINTS: 5
   };
@@ -22,7 +23,7 @@ function getGames() {
 }
 
 function getTotalTournamentNights() {
-  return getSeason().TOTAL_TOURNAMENT_NIGHTS || 15;
+  return getSeason().TOTAL_TOURNAMENT_NIGHTS || 20;
 }
 
 function getRfBonusPoints() {
@@ -109,15 +110,13 @@ function card(title, meta, inner) {
 
 function renderSeasonSwitcher() {
   const seasons = window.seasons || {};
-  return `
-    <div class="season-switcher">
-      ${Object.entries(seasons).map(([key, season]) => `
-        <button class="season-btn ${key === currentSeasonKey ? 'active' : ''}" data-season="${key}">
-          ${season.label || key}
-        </button>
-      `).join('')}
-    </div>
-  `;
+  return `<div class="season-switcher">
+    ${Object.entries(seasons).map(([key, season]) => `
+      <button class="season-btn ${key === currentSeasonKey ? 'active' : ''}" data-season="${key}">
+        ${season.label || key}
+      </button>
+    `).join('')}
+  </div>`;
 }
 
 function renderHeader() {
@@ -129,15 +128,16 @@ function renderHeader() {
 
 function renderStandings() {
   const rows = stats().sort(compareRank);
-  const top = rows[0];
-  const ppg = [...rows].sort((a,b) => b.avgPoints - a.avgPoints || b.gamesPlayed - a.gamesPlayed)[0];
   const games = getGames();
 
-  const body = rows.map((r,i)=>`<tr><td><span class="rank rank-${i+1}">${i+1}</span></td><td>${r.name}</td><td><b>${r.totalPoints}</b></td><td>${r.gamesPlayed}</td><td>${r.wins}</td><td>${r.seconds}</td><td>${r.thirds}</td><td>${r.podiums}</td><td>${r.avgPoints.toFixed(2)}</td><td>${r.rfCount}</td><td>${r.sfCount}</td></tr>`).join('');
-
   if (!rows.length) {
-    return card('Overall Standings', 'No players found for this season.', '<p class="muted">Add players and games in data.js.</p>');
+    return card('Overall Standings', 'No players found for this season.', '<p class="muted">Check that data.js contains window.seasons with players and games.</p>');
   }
+
+  const top = rows[0];
+  const ppg = [...rows].sort((a,b) => b.avgPoints - a.avgPoints || b.gamesPlayed - a.gamesPlayed)[0];
+
+  const body = rows.map((r,i)=>`<tr><td><span class="rank rank-${i+1}">${i+1}</span></td><td>${r.name}</td><td><b>${r.totalPoints}</b></td><td>${r.gamesPlayed}</td><td>${r.wins}</td><td>${r.seconds}</td><td>${r.thirds}</td><td>${r.podiums}</td><td>${r.avgPoints.toFixed(2)}</td><td>${r.rfCount}</td><td>${r.sfCount}</td></tr>`).join('');
 
   return card('Overall Standings','Click-free static ranking', `<div class="table-wrap"><table><thead><tr><th>#</th><th>Player</th><th>Total</th><th>Gms</th><th>1st</th><th>2nd</th><th>3rd</th><th>Pod</th><th>PPG</th><th>RF</th><th>SF</th></tr></thead><tbody>${body}</tbody></table></div><div class="mini"><span>Top performer: <b>${top.name}</b> (${top.totalPoints} pts)</span><span>PPG: <b>${ppg.name}</b> (${ppg.avgPoints.toFixed(2)})</span><span>Total games: <b>${games.length}</b></span></div>`);
 }
@@ -302,20 +302,14 @@ function totalPodiumRows() {
     .sort((a, b) => b.podiums - a.podiums || a.name.localeCompare(b.name));
 }
 
-function currentNoPodiumStreakRows() {
+function currentNoPodiumStreakRows() { 
   const players = getPlayers();
   const games = getGames();
-  return players.map(name => {
-    let streak = 0;
-    for (let i = games.length - 1; i >= 0; i--) {
-      const value = games[i].pointsByPlayer[name];
-      if (value === 4 || value === 2 || value === 1) {
-        break;
-      }
-      streak++;
-    }
-    return { name, streak };
-  }).sort((a, b) => b.streak - a.streak || a.name.localeCompare(b.name));
+  return players.map(name => { 
+    let streak = 0; for (let i = games.length - 1; i >= 0; i--) 
+    { const value = games[i].pointsByPlayer[name]; 
+        if (value === 4 || value === 2 || value === 1) { break; } streak++; } 
+    return { name, streak }; }).sort((a, b) => b.streak - a.streak || a.name.localeCompare(b.name)); 
 }
 
 function drawPodium(place) {
@@ -456,7 +450,7 @@ function bindEvents() {
   if (h2hB) h2hB.addEventListener('change', updateH2H);
 }
 
-const SITE_PASSWORD = 'Fito_shume';
+const SITE_PASSWORD = "Fito_shume";
 
 function showLogin() {
   app.innerHTML = `
@@ -497,19 +491,19 @@ function showLogin() {
     </div>
   `;
 
-  document.getElementById('loginBtn').addEventListener('click', () => {
-    const password = document.getElementById('passwordInput').value;
+  document.getElementById("loginBtn").addEventListener("click", () => {
+    const password = document.getElementById("passwordInput").value;
 
     if (password === SITE_PASSWORD) {
-      localStorage.setItem('poker-auth', 'true');
+      localStorage.setItem("poker-auth", "true");
       render();
     } else {
-      document.getElementById('errorMsg').innerText = 'Wrong password';
+      document.getElementById("errorMsg").innerText = "Wrong password";
     }
   });
 }
 
-if (localStorage.getItem('poker-auth') === 'true') {
+if (localStorage.getItem("poker-auth") === "true") {
   render();
 } else {
   showLogin();
