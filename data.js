@@ -1657,9 +1657,9 @@ season3: {
     "dayId": 1,
     "label": "14-06_1",
     "pointsByPlayer": {
-      "Amiklati": 0,
-      "Antonio": 0,
-      "Arber": 0,
+      "Amiklati": 1,
+      "Antonio": 2,
+      "Arber": 4,
       "Arditi": 0,
       "Denis": 0,
       "Duli": 0,
