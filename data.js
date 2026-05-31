@@ -1678,5 +1678,4 @@ season3: {
     RF_BONUS_POINTS: 10,
     SF_BONUS_POINTS: 5
   }
-}
 };
