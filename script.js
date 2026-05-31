@@ -1,6 +1,6 @@
 const COLORS = ['#f87171', '#facc15', '#4ade80', '#60a5fa', '#c084fc', '#f472b6', '#38bdf8', '#a3e635', '#fb923c', '#e879f9'];
 
-let currentSeasonKey = localStorage.getItem("poker-season") || "season2";
+let currentSeasonKey = localStorage.getItem("poker-season") || "season3";
 const app = document.getElementById('app');
 
 function getSeason() {
