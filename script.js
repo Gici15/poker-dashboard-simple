@@ -1,9 +1,30 @@
 const COLORS = ['#f87171', '#facc15', '#4ade80', '#60a5fa', '#c084fc', '#f472b6', '#38bdf8', '#a3e635', '#fb923c', '#e879f9'];
-const players = window.players || [];
-const games = window.games || [];
-const TOTAL_TOURNAMENT_NIGHTS = window.TOTAL_TOURNAMENT_NIGHTS || 20;
-const RF_BONUS_POINTS = window.RF_BONUS_POINTS || 10;
-const SF_BONUS_POINTS = window.SF_BONUS_POINTS || 5;
+let currentSeasonKey = localStorage.getItem("poker-season") || "season2";
+
+function getSeason() {
+  return window.seasons[currentSeasonKey];
+}
+
+function getPlayers() {
+  return getSeason().players || [];
+}
+
+function getGames() {
+  return getSeason().games || [];
+}
+
+function getTotalTournamentNights() {
+  return getSeason().TOTAL_TOURNAMENT_NIGHTS || 20;
+}
+
+function getRfBonusPoints() {
+  return getSeason().RF_BONUS_POINTS || 10;
+}
+
+function getSfBonusPoints() {
+  return getSeason().SF_BONUS_POINTS || 5;
+}
+
 const app = document.getElementById('app');
 
 function bonusFor(game, name) {
