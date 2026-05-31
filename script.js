@@ -7,7 +7,7 @@ function getSeason() {
     label: 'Season',
     players: [],
     games: [],
-    TOTAL_TOURNAMENT_NIGHTS: 20,
+    TOTAL_TOURNAMENT_NIGHTS: 15,
     RF_BONUS_POINTS: 10,
     SF_BONUS_POINTS: 5
   };
@@ -22,7 +22,7 @@ function getGames() {
 }
 
 function getTotalTournamentNights() {
-  return getSeason().TOTAL_TOURNAMENT_NIGHTS || 20;
+  return getSeason().TOTAL_TOURNAMENT_NIGHTS || 15;
 }
 
 function getRfBonusPoints() {
