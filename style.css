@@ -447,3 +447,24 @@ if (localStorage.getItem("poker-auth") === "true") {
   background: linear-gradient(135deg, #22c55e, #16a34a);
   color: white;
 }
+.season-switcher {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.season-btn {
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: #020617;
+  color: #e5e7eb;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.season-btn.active {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
