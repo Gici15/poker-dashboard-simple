@@ -1643,8 +1643,38 @@ window.seasons = {
   }
 ],
 
-TOTAL_TOURNAMENT_NIGHTS = 15;
-RF_BONUS_POINTS = 10;
-SF_BONUS_POINTS = 5;
+TOTAL_TOURNAMENT_NIGHTS = 15,
+RF_BONUS_POINTS = 10,
+SF_BONUS_POINTS = 5
 },
+season3: {
+    label: "Season 3",
+    players: ["Amiklati","Antonio","Arber","Arditi","Denis","Duli","Ervir","Gesti","Landi","Visi"],
+    games: [
+	{
+    "id": 1,
+    "dayId": 1,
+    "label": "14-06_1",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": 0,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  }],
+    TOTAL_TOURNAMENT_NIGHTS: 15,
+    RF_BONUS_POINTS: 10,
+    SF_BONUS_POINTS: 5
+  }
+}
 };
