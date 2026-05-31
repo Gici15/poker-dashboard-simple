@@ -1646,7 +1646,6 @@ window.seasons = {
 TOTAL_TOURNAMENT_NIGHTS = 15;
 RF_BONUS_POINTS = 10;
 SF_BONUS_POINTS = 5;
-}
 },
 
 season3: {
