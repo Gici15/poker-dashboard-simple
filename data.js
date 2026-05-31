@@ -1506,7 +1506,7 @@ window.games = [
   {
     "id": 72,
     "dayId": 15,
-    "label": "30-05_5",
+    "label": "30-05_1",
     "pointsByPlayer": {
       "Amiklati": 4,
       "Antonio": 1,
@@ -1527,7 +1527,7 @@ window.games = [
   {
     "id": 73,
     "dayId": 15,
-    "label": "30-05_5",
+    "label": "30-05_2",
     "pointsByPlayer": {
       "Amiklati": 0,
       "Antonio": 0,
@@ -1548,7 +1548,7 @@ window.games = [
   {
     "id": 74,
     "dayId": 15,
-    "label": "30-05_5",
+    "label": "30-05_3",
     "pointsByPlayer": {
       "Amiklati": 4,
       "Antonio": 0,
@@ -1569,7 +1569,7 @@ window.games = [
   {
     "id": 75,
     "dayId": 15,
-    "label": "30-05_5",
+    "label": "30-05_4",
     "pointsByPlayer": {
       "Amiklati": 0,
       "Antonio": 1,
@@ -1611,7 +1611,7 @@ window.games = [
   {
     "id": 77,
     "dayId": 15,
-    "label": "30-05_5",
+    "label": "30-05_6",
     "pointsByPlayer": {
       "Amiklati": 0,
       "Antonio": 2,
@@ -1632,7 +1632,7 @@ window.games = [
   {
     "id": 78,
     "dayId": 15,
-    "label": "30-05_5",
+    "label": "30-05_7",
     "pointsByPlayer": {
       "Amiklati": 0,
       "Antonio": 0,
