@@ -1647,6 +1647,7 @@ TOTAL_TOURNAMENT_NIGHTS = 15,
 RF_BONUS_POINTS = 10,
 SF_BONUS_POINTS = 5
 },
+
 season3: {
     label: "Season 3",
     players: ["Amiklati","Antonio","Arber","Arditi","Denis","Duli","Ervir","Gesti","Landi","Visi"],
@@ -1671,7 +1672,8 @@ season3: {
       "RF": null,
       "SF": null
     }
-  }],
+  }
+	],
     TOTAL_TOURNAMENT_NIGHTS: 15,
     RF_BONUS_POINTS: 10,
     SF_BONUS_POINTS: 5
