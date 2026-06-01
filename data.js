@@ -212,6 +212,111 @@ window.seasons = {
       "RF": null,
       "SF": null
     }
+  },
+		{
+    "id": 11,
+    "dayId": 3,
+    "label": "03-10_1",
+    "pointsByPlayer": {
+      "Amiklati": 1,
+      "Antonio": 4,
+      "Arber": 2,
+      "Arditi": 0,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": 0,
+      "Visi": "x"
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 12,
+    "dayId": 3,
+    "label": "03-10_2",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 1,
+      "Gesti": 4,
+      "Landi": 2,
+      "Visi": "x"
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 13,
+    "dayId": 3,
+    "label": "03-10_3",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 2,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 1,
+      "Landi": 0,
+      "Visi": "x"
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 14,
+    "dayId": 3,
+    "label": "03-10_4",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 1,
+      "Landi": 2,
+      "Visi": "x"
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 15,
+    "dayId": 3,
+    "label": "03-10_5",
+    "pointsByPlayer": {
+      "Amiklati": 1,
+      "Antonio": 2,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 4,
+      "Landi": 0,
+      "Visi": "x"
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
   }
 	],
     TOTAL_TOURNAMENT_NIGHTS: 15,
