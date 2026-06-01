@@ -3322,6 +3322,18 @@ season3: {
     }
   }
 	],
+	FIFARanking: [
+    "Ervir",
+    "Antonio",
+    "Duli",
+    "Landi",
+    "Amiklati",
+    "Arber",
+    "Arditi",
+    "Visi",
+    "Denis",
+    "Gesti"
+  ],
     TOTAL_TOURNAMENT_NIGHTS: 15,
     RF_BONUS_POINTS: 10,
     SF_BONUS_POINTS: 5
