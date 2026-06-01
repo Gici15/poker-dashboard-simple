@@ -3322,7 +3322,7 @@ season3: {
     }
   }
 	],
-	FIFARanking: [
+	finalRanking: [
     "Ervir",
     "Antonio",
     "Duli",
