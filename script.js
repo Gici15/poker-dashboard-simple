@@ -225,6 +225,33 @@ function renderStandings() {
     `
   );
 }
+function renderFinalRanking() {
+  const ranking = getSeason().finalRanking || [];
+
+  if (!ranking.length) return '';
+
+  const body = ranking.map((name, index) => `
+    <tr>
+      <td><span class="rank rank-${index + 1}">${index + 1}</span></td>
+      <td>${name}</td>
+    </tr>
+  `).join('');
+
+  return card(
+    'FIFA Ranking',
+    'Official final ranking',
+    `
+      <div class="table-wrap small">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Player</th></tr>
+          </thead>
+          <tbody>${body}</tbody>
+        </table>
+      </div>
+    `
+  );
+}
 
 function renderChartCard(id, title, meta, controls = '') {
   return card(title, meta, `${controls}<div class="chart${id === 'cumulativeChart' ? ' tall' : ''}"><div class="canvas-wrap"><canvas id="${id}"></canvas></div></div>`);
@@ -287,6 +314,7 @@ function render() {
 
   app.innerHTML =
     renderHeader() +
+    renderFinalRanking() +
     renderStandings() +
     `<section class="grid">
       ${renderChartCard('cumulativeChart', 'Cumulative Points by Night', `Running totals after each night (${players.length} players).`)}
