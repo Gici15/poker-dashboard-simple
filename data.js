@@ -25,7 +25,7 @@ window.seasons = {
     }
   },
 		{
-    "id": 1,
+    "id": 2,
     "dayId": 1,
     "label": "12-09_2",
     "pointsByPlayer": {
@@ -46,7 +46,7 @@ window.seasons = {
     }
   },
 		{
-    "id": 1,
+    "id": 3,
     "dayId": 1,
     "label": "12-09_3",
     "pointsByPlayer": {
@@ -67,7 +67,7 @@ window.seasons = {
     }
   },
 		{
-    "id": 1,
+    "id": 4,
     "dayId": 1,
     "label": "12-09_4",
     "pointsByPlayer": {
@@ -88,7 +88,7 @@ window.seasons = {
     }
   },
 		{
-    "id": 1,
+    "id": 5,
     "dayId": 1,
     "label": "12-09_5",
     "pointsByPlayer": {
@@ -101,6 +101,111 @@ window.seasons = {
       "Ervir": "x",
       "Gesti": 0,
       "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 6,
+    "dayId": 2,
+    "label": "22-09_1",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 1,
+      "Arditi": 0,
+      "Denis": 4,
+      "Duli": "x",
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": 2,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 7,
+    "dayId": 2,
+    "label": "22-09_2",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": "x",
+      "Ervir": 2,
+      "Gesti": 4,
+      "Landi": 0,
+      "Visi": 1
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 8,
+    "dayId": 2,
+    "label": "22-09_3",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 1,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 2,
+      "Duli": "x",
+      "Ervir": 0,
+      "Gesti": 4,
+      "Landi": 0,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 9,
+    "dayId": 2,
+    "label": "22-09_4",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 4,
+      "Arber": 0,
+      "Arditi": 1,
+      "Denis": 2,
+      "Duli": "x",
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": 0,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 10,
+    "dayId": 2,
+    "label": "22-09_5",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 1,
+      "Denis": 0,
+      "Duli": "x",
+      "Ervir": 2,
+      "Gesti": 4,
+      "Landi": 0,
       "Visi": 0
     },
     "handBonuses": {
