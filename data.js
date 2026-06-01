@@ -317,6 +317,594 @@ window.seasons = {
       "RF": null,
       "SF": null
     }
+  },
+		{
+    "id": 16,
+    "dayId": 4,
+    "label": "10-10_1",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 2,
+      "Arber": 0,
+      "Arditi": 1,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 0,
+      "Landi": 0,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 17,
+    "dayId": 4,
+    "label": "10-10_2",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 0,
+      "Landi": 2,
+      "Visi": 1
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 18,
+    "dayId": 4,
+    "label": "10-10_3",
+    "pointsByPlayer": {
+      "Amiklati": 2,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 4,
+      "Ervir": 0,
+      "Gesti": 1,
+      "Landi": 0,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 19,
+    "dayId": 4,
+    "label": "10-10_4",
+    "pointsByPlayer": {
+      "Amiklati": 4,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 2,
+      "Gesti": 1,
+      "Landi": 0,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 20,
+    "dayId": 5,
+    "label": "24-10_1",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 2,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 4,
+      "Duli": 0,
+      "Ervir": 1,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 21,
+    "dayId": 5,
+    "label": "24-10_2",
+    "pointsByPlayer": {
+      "Amiklati": 1,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 2,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 22,
+    "dayId": 5,
+    "label": "24-10_3",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 2,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 1,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 23,
+    "dayId": 5,
+    "label": "24-10_4",
+    "pointsByPlayer": {
+      "Amiklati": 1,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 2,
+      "Landi": "x",
+      "Visi": 4
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 24,
+    "dayId": 5,
+    "label": "24-10_5",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 2,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 1,
+      "Ervir": 4,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 25,
+    "dayId": 6,
+    "label": "31-10_1",
+    "pointsByPlayer": {
+      "Amiklati": 4,
+      "Antonio": 2,
+      "Arber": 1,
+      "Arditi": "x",
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 26,
+    "dayId": 6,
+    "label": "31-10_2",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 2,
+      "Ervir": 4,
+      "Gesti": 1,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 27,
+    "dayId": 6,
+    "label": "31-10_3",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 1,
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 2,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 28,
+    "dayId": 6,
+    "label": "31-10_4",
+    "pointsByPlayer": {
+      "Amiklati": 1,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": 4,
+      "Denis": 2,
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 29,
+    "dayId": 6,
+    "label": "31-10_5",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 2,
+      "Arber": "x",
+      "Arditi": 0,
+      "Denis": 1,
+      "Duli": "x",
+      "Ervir": 4,
+      "Gesti": "x",
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 30,
+    "dayId": 7,
+    "label": "08-11_1",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": "x",
+      "Arditi": 1,
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 2
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 31,
+    "dayId": 7,
+    "label": "08-11_2",
+    "pointsByPlayer": {
+      "Amiklati": 1,
+      "Antonio": 0,
+      "Arber": "x",
+      "Arditi": 0,
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 2,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 4
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 32,
+    "dayId": 7,
+    "label": "08-11_3",
+    "pointsByPlayer": {
+      "Amiklati": 1,
+      "Antonio": 0,
+      "Arber": "x",
+      "Arditi": 4,
+      "Denis": 2,
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 33,
+    "dayId": 7,
+    "label": "08-11_4",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": "x",
+      "Arditi": 0,
+      "Denis": 2,
+      "Duli": 4,
+      "Ervir": 1,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 34,
+    "dayId": 7,
+    "label": "08-11_5",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 4,
+      "Arber": "x",
+      "Arditi": 0,
+      "Denis": 2,
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 1
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 35,
+    "dayId": 8,
+    "label": "14-11_1",
+    "pointsByPlayer": {
+      "Amiklati": 1,
+      "Antonio": 4,
+      "Arber": 0,
+      "Arditi": "x",
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 2,
+      "Gesti": 0,
+      "Landi": 0,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 36,
+    "dayId": 8,
+    "label": "14-11_2",
+    "pointsByPlayer": {
+      "Amiklati": 1,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": "x",
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 0,
+      "Landi": 0,
+      "Visi": 2
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 37,
+    "dayId": 8,
+    "label": "14-11_3",
+    "pointsByPlayer": {
+      "Amiklati": 2,
+      "Antonio": 1,
+      "Arber": 0,
+      "Arditi": "x",
+      "Denis": 0,
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": 4,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 38,
+    "dayId": 8,
+    "label": "14-11_4",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": "x",
+      "Denis": 2,
+      "Duli": 0,
+      "Ervir": 4,
+      "Gesti": 1,
+      "Landi": 0,
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 39,
+    "dayId": 8,
+    "label": "14-11_5",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": 0,
+      "Arditi": "x",
+      "Denis": 1,
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 0,
+      "Landi": 4,
+      "Visi": 2
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 40,
+    "dayId": 9,
+    "label": "28-11_1",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": "x",
+      "Arditi": 4,
+      "Denis": "x",
+      "Duli": 1,
+      "Ervir": 2,
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": "Amiklati"
+    }
+  },
+		{
+    "id": 41,
+    "dayId": 9,
+    "label": "28-11_2",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 0,
+      "Arber": "x",
+      "Arditi": 4,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 2,
+      "Gesti": 1,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 42,
+    "dayId": 9,
+    "label": "28-11_3",
+    "pointsByPlayer": {
+      "Amiklati": 4,
+      "Antonio": 2,
+      "Arber": "x",
+      "Arditi": 0,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 1,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 43,
+    "dayId": 9,
+    "label": "28-11_4",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 4,
+      "Arber": "x",
+      "Arditi": 1,
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": 0,
+      "Gesti": 2,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
   }
 	],
     TOTAL_TOURNAMENT_NIGHTS: 15,
