@@ -1290,12 +1290,12 @@ window.seasons = {
     "label": "10-01_1",
     "pointsByPlayer": {
       "Amiklati": 4,
-      "Antonio": 1,
+      "Antonio": 2,
       "Arber": 0,
       "Arditi": "x",
       "Denis": 0,
       "Duli": 0,
-      "Ervir": 2,
+      "Ervir": 1,
       "Gesti": "x",
       "Landi": 0,
       "Visi": 0
