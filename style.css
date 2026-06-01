@@ -211,7 +211,7 @@ canvas { width: 100% !important; height: 100% !important; }
   color: white;
 }
 .ranking-card-wrapper {
-  max-width: 550px;
+  max-width: 450px;
   margin: 0 auto 24px auto;
 }
 
