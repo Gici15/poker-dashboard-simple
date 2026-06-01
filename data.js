@@ -99,7 +99,7 @@ window.seasons = {
       "Denis": "x",
       "Duli": 2,
       "Ervir": "x",
-      "Gesti": 0,
+      "Gesti": "x",
       "Landi": "x",
       "Visi": 0
     },
@@ -142,7 +142,7 @@ window.seasons = {
       "Duli": "x",
       "Ervir": 2,
       "Gesti": 4,
-      "Landi": 0,
+      "Landi": "x",
       "Visi": 1
     },
     "handBonuses": {
@@ -163,7 +163,7 @@ window.seasons = {
       "Duli": "x",
       "Ervir": 0,
       "Gesti": 4,
-      "Landi": 0,
+      "Landi": "x",
       "Visi": 0
     },
     "handBonuses": {
