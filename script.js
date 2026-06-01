@@ -314,8 +314,8 @@ function render() {
 
   app.innerHTML =
     renderHeader() +
-    renderFinalRanking() +
     renderStandings() +
+    renderFinalRanking() +
     `<section class="grid">
       ${renderChartCard('cumulativeChart', 'Cumulative Points by Night', `Running totals after each night (${players.length} players).`)}
       ${renderChartCard('nightChart', 'Night Standings', 'Total points for selected night.', renderNightControls())}
