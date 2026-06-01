@@ -6,7 +6,7 @@ window.seasons = {
 	{
     "id": 1,
     "dayId": 1,
-    "label": "14-06_1",
+    "label": "12-09_1",
     "pointsByPlayer": {
       "Amiklati": 0,
       "Antonio": 4,
@@ -16,6 +16,90 @@ window.seasons = {
       "Duli": 0,
       "Ervir": "x",
       "Gesti": 2,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 1,
+    "dayId": 1,
+    "label": "12-09_2",
+    "pointsByPlayer": {
+      "Amiklati": 4,
+      "Antonio": 1,
+      "Arber": 0,
+      "Arditi": "x",
+      "Denis": "x",
+      "Duli": 2,
+      "Ervir": "x",
+      "Gesti": 0,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 1,
+    "dayId": 1,
+    "label": "12-09_3",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 4,
+      "Arber": 0,
+      "Arditi": "x",
+      "Denis": "x",
+      "Duli": 2,
+      "Ervir": "x",
+      "Gesti": 1,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 1,
+    "dayId": 1,
+    "label": "12-09_4",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 2,
+      "Arber": 0,
+      "Arditi": "x",
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": "x",
+      "Gesti": 1,
+      "Landi": "x",
+      "Visi": 4
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  },
+		{
+    "id": 1,
+    "dayId": 1,
+    "label": "12-09_5",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 4,
+      "Arber": 1,
+      "Arditi": "x",
+      "Denis": "x",
+      "Duli": 2,
+      "Ervir": "x",
+      "Gesti": 0,
       "Landi": "x",
       "Visi": 0
     },
