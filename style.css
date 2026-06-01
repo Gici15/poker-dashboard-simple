@@ -210,3 +210,11 @@ canvas { width: 100% !important; height: 100% !important; }
   background: linear-gradient(135deg, #22c55e, #16a34a);
   color: white;
 }
+.ranking-card-wrapper {
+  max-width: 550px;
+  margin: 0 auto 24px auto;
+}
+
+.ranking-card-wrapper .table-wrap {
+  overflow: hidden;
+}
