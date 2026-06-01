@@ -237,9 +237,11 @@ function renderFinalRanking() {
     </tr>
   `).join('');
 
-  return card(
-    'FIFA Ranking',
-    'Official final ranking',
+  return `
+  <div class="ranking-card-wrapper">
+    ${card(
+      'FIFA RANKING',
+      'Official final ranking',
     `
       <div class="table-wrap small">
         <table>
@@ -250,7 +252,9 @@ function renderFinalRanking() {
         </table>
       </div>
     `
-  );
+      )}
+  </div>
+`;
 }
 
 function renderChartCard(id, title, meta, controls = '') {
