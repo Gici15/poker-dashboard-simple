@@ -1,4 +1,35 @@
 window.seasons = {
+	season1: {
+    label: "Season 1",
+    players: ["Amiklati","Antonio","Arber","Arditi","Denis","Duli","Ervir","Gesti","Landi","Visi"],
+    games: [
+	{
+    "id": 1,
+    "dayId": 1,
+    "label": "14-06_1",
+    "pointsByPlayer": {
+      "Amiklati": 0,
+      "Antonio": 4,
+      "Arber": 1,
+      "Arditi": "x",
+      "Denis": "x",
+      "Duli": 0,
+      "Ervir": "x",
+      "Gesti": 2,
+      "Landi": "x",
+      "Visi": 0
+    },
+    "handBonuses": {
+      "RF": null,
+      "SF": null
+    }
+  }
+	],
+    TOTAL_TOURNAMENT_NIGHTS: 15,
+    RF_BONUS_POINTS: 10,
+    SF_BONUS_POINTS: 5
+  },
+	
   season2: {
     label: "Season 2",
 	players: ["Amiklati","Antonio","Arber","Arditi","Denis","Duli","Ervir","Gesti","Landi","Visi"],
