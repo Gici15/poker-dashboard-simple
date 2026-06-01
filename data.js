@@ -92,8 +92,8 @@ window.seasons = {
     "dayId": 1,
     "label": "12-09_5",
     "pointsByPlayer": {
-      "Amiklati": 0,
-      "Antonio": 4,
+      "Amiklati": 4,
+      "Antonio": 0,
       "Arber": 1,
       "Arditi": "x",
       "Denis": "x",
